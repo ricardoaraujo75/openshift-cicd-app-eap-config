@@ -2,16 +2,16 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: eap-app
-    app.kubernetes.io/component: eap-app
-    app.kubernetes.io/instance: eap-app
-  name: eap-app
+    app: app-eap
+    app.kubernetes.io/component: app-eap
+    app.kubernetes.io/instance: app-eap
+  name: app-eap
 spec:
-  host: eap-app-hom.apps.cluster-5l4b7.5l4b7.sandbox1903.opentlc.com
+  host: app-eap-hom.apps.cluster-42jck.42jck.sandbox1281.opentlc.com
   port:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: eap-app
+    name: app-eap
     weight: 100
   wildcardPolicy: None

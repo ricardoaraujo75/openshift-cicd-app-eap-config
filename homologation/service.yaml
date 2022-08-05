@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: eap-app
-    app.kubernetes.io/component: eap-app
-    app.kubernetes.io/instance: eap-app
-  name: eap-app
+    app: app-eap
+    app.kubernetes.io/component: app-eap
+    app.kubernetes.io/instance: app-eap
+  name: app-eap
 spec:
   ports:
   - name: 8080-tcp
@@ -21,6 +21,6 @@ spec:
     protocol: TCP
     targetPort: 8778
   selector:
-    deployment: eap-app
+    deployment: app-eap
   sessionAffinity: None
   type: ClusterIP

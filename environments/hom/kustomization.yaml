@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../homologation/
 images:
-- digest: sha256:b3bba0e21cc05107e527907ae6bd06250b3ddd4ae6b12ab53e778d9047956b46
-  name: image-registry.openshift-image-registry.svc:5000/oqss-hom/eap-app:latest
-  newName: image-registry.openshift-image-registry.svc:5000/oqss-hom/eap-app
+- digest: sha256:6e83bb0c4cc8fb6a4bd38559928ae642d79c3c29e5ee2884b4c3bb87c6f64bf4
+  name: image-registry.openshift-image-registry.svc:5000/oqss-hom/app-eap:latest
+  newName: image-registry.openshift-image-registry.svc:5000/oqss-hom/app-eap
